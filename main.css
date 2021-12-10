@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 152px;
+}
+.header img{
+    width: 9%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.nav{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bg-img{
+    background-image:  url(img/bg_blog.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img h1{
+    padding-top:100px ;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 span{
+    color: green;
+}
+.nav a:hover{
+    color: green;
+}
+.box a{
+    color: black;
+    text-transform: none;
+    opacity: 0.8;
+}
+.block{
+    width: 1200px;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.block .box{
+    width: 595px;
+    height: 290px;
+    background-color:#F8F8F8 ;
+    padding: 2.5rem 3rem 2rem 3rem;
+    position: relative;
+}
+.box .fa-building{
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    color: grey;
+}
+.box .fa-home{
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    color: green;
+}
+.box p{
+    opacity: 0.8;
+}
+.block .box:hover{
+    background-color: #a8a8a8;
+    color: white;
+}
+.big-box{
+    width: 1200px;
+    margin-top: 3rem;
+    background-color: #F8F8F8 ;
+    padding: 5rem 4rem 3rem 4rem;
+    font-size: 25px;
+}
+.courses{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding:0px 1px 1px 1px;
+}
+.box_1{
+    width: 49%;
+    padding: 2rem 4rem 1rem 3rem;
+    margin: 0px 1px ;
+    position: relative;
+}
+.box_1 a{
+    color: black;
+    text-transform: none;
+}
+.box_1 p{
+    text-align: left;
+    margin: 3.5rem 0rem 0.5rem 0rem;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.box_1:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.box_1 img{
+    position: absolute;
+    top: 110px;
+    left: 426px;
+    width: 20%;
+}
+.approach h1{ 
+    color: black;
+    text-align: center;
+    margin: 1rem;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem;
+}
+.container .s_box{
+    width: 310px;
+    padding:2rem 1.5rem ;
+    background-color: darkgray;
+    color: white;
+}
+.s_box img{
+    width: 260px;
+    height: 280px;
+}
+.approach{
+    margin-top: 3rem;
+    background-color: #F8F8F8;
+    width: 1200px;
+    padding: 2rem;
+}
+.container h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-top: 3rem;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.feedback p{
+    color: white;
+}
+.footer img{
+    position:absolute;
+}
+.fa-map-marker{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -54px;
+    font-size: 18px;
+}
+.fa-envelope-open-text{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -56px;
+    font-size: 18px;
+}
+.fa-mobile-alt{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    font-size: 18px;
+}
+.round{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    left: -70px;
+}
+.feedback .location{
+    position: relative;
+}
+.feedback .phone{
+    position: relative;
+}
+.feedback .email{
+    position: relative;
+}
+p{
+    text-align: center;
+}
+/* responsive */
+@media (min-width:0px) and (max-width:446.9px ){
+    .header img{
+        width: 20%;
+        top: 0px;
+        left: 0px;
+    }
+    .nav{
+        flex-direction: column;
+        text-align: right;
+    }
+    .block{
+        width: 100%;
+        flex-direction: column;
+        padding: 0.25rem;
+    }
+    .block .box{
+        padding: 0.25px;
+        text-align: left;
+        width: 320px;
+    }
+    .block p {
+        font-size: 14px;
+        text-align: left;
+    }
+    .courses{
+        width: 100%;
+    }
+    .box_1 img {
+        top: 35px;
+        left: 200px;
+    }
+    .box .fa-building{
+        top: 12px;
+        left: 130px;
+    } .box .fa-home{
+        top: 12px;
+        left: 130px;
+    }.big-box{
+        width: 320px;
+        padding: 0.25rem;
+        font-size: 80%;
+    }.approach{
+        padding: 0.2rem;
+        width: 320px;
+        font-size: 80%;
+    }.approach .container{
+        flex-direction: column;
+        margin: 0rem;
+        width: 300px;
+    }
+    .footer img{   
+        width: 20%;
+    }.round{
+        width: 20px;
+        height: 20px;
+        top: -25px;
+        left: 20px;
+    }.footer{
+        height: 100px;
+        font-size: 60%;
+    }.fa-map-marker{
+        top: -20px;
+        left: 25px;
+        font-size: 12px;
+    }.fa-mobile-alt{
+        top: -20px;
+        left: 25px;
+        font-size: 12px;
+    }.fa-envelope-open-text{
+        top: -20px;
+        left: 24px;
+        font-size: 12px;
+    }.courses .box{
+        width: 45%;
+    }
+}
+@media (min-width:447px ) and (max-width:768.9px ){
+
+}
+@media (min-width:769px) and (max-width:989.9px ){
+    .approach .container{
+        flex-direction: column;
+        margin: 0rem;
+        width: 300px;
+    }
+
+}
+@media (min-width:990px ) and (max-width:1200px ){
+    .approach .container{
+        flex-direction: row;
+        margin: 0rem;
+        width: 300px;
+    }
+}
