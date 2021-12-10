@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 152px;
+}
+.header img{
+    width: 9%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav a:hover{
+    color: green;
+}
+/* wrapper */
+.wrapper{
+    width: 1200px;
+    padding:1.5rem  3rem;
+    text-align: center;
+}
+.wrapper a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.wrapper a:hover{
+    color: green;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    text-align: center;
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    border: 1px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.box h2{
+    margin:0rem 0rem 1.5rem 0rem;
+}
+.box hr{
+    width: 155px;
+    margin-bottom:1rem ;
+}
+.box i{
+    position: absolute;
+    top: 35px;
+    left: 68px;
+    font-size: 25px;
+    color:darkslategray;
+}
+.box .fa-map-marker{
+    position: absolute;
+    top: 35px;
+    left: 110px;
+}
+.box .fa-calendar-week{
+    position: absolute;
+    top: 35px;
+    left: 85px;
+}
+.box{
+    position: relative;
+}
+/* input */
+.action{
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+    width:1200px ;
+    background-color: #F8F8F8;
+}
+.action h1{
+    margin-bottom: 1rem;
+}
+.action p{
+    margin-bottom: 1rem;
+}
+input{
+    width: 300px;
+    height: 40px;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+textarea{
+    width: 935px;
+    height: 110px;
+}
+#input{
+    text-align: center;
+}
+/* button */
+.btn{
+    padding: 0.5rem 4rem;
+    font-size: 20px;
+    color: green;
+    background-color: honeydew;
+    border-radius: 5px;
+}
+.btn:hover{
+    color: white;
+    background-color: green;
+    border-color: green;
+}
+/* footer */
+.footer{
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 200px;
+    margin-top: 3rem;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.feedback p{
+    color: white;
+}
+.footer img{
+    position:absolute;
+}
+.fa-map-marker{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -54px;
+    font-size: 18px;
+}
+.fa-envelope-open-text{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -56px;
+    font-size: 18px;
+}
+.fa-mobile-alt{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    font-size: 18px;
+}
+.round{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    left: -70px;
+}
+.feedback .location{
+    position: relative;
+}
+.feedback .phone{
+    position: relative;
+}
+.feedback .email{
+    position: relative;
+}
+p{
+    text-align: center;
+}
+/* animation */
+.live3{
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(191, 240, 202, 0.15);
+    animation: live3 1s infinite;
+    animation-delay: 300ms;
+    border-radius: 50%;
+}
+.live2{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(13, 197, 23, 0.3);
+    animation: live2 1s infinite;
+    animation-delay: 200ms;
+    border-radius: 50%;
+}
+.live{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color:rgba(53, 119, 10, 0.363);
+    animation: live 1s infinite;
+    animation-delay: 100ms;
+    border-radius: 50%;
+}
+@keyframes circle {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.94);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+@keyframes live {
+    0%{
+       transform: scale(1);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+       transform: scale(1);
+    }
+}
+@keyframes live2 {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes live3 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.93);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.wiut{
+    width: 1200px;
+    margin-top: 3rem;
+    text-align: center;
+}
+.wiut img{
+    width: 50%;
+}
