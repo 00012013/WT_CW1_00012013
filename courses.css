@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 154px;
+}
+.header img{
+    width: 9%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.nav{
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav a:hover{
+    color: green;
+}
+.block{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 3rem ;
+    width: 70%;
+}
+.box a{
+    color: black;
+    text-transform: none;
+    line-height: 40px;
+    opacity: 0.7;
+}
+a:hover{
+    color:blue;
+}
+body{
+    position: relative;
+}
+a .fa-times-circle{
+    color: black;
+    position: relative;
+    top: 30px;
+    left:1440px;
+    font-size: 25px;
+}
+a .fa-times-circle:hover{
+    color: blue;
+}
+/* footer */
+.footer{
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-top: 3rem;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.feedback p{
+    color: white;
+}
+.footer img{
+    position:absolute;
+}
+.fa-map-marker{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -54px;
+    font-size: 18px;
+}
+.fa-envelope-open-text{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -56px;
+    font-size: 18px;
+}
+.fa-mobile-alt{
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    font-size: 18px;
+}
+.round{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    left: -70px;
+}
+.feedback .location{
+    position: relative;
+}
+.feedback .phone{
+    position: relative;
+}
+.feedback .email{
+    position: relative;
+}
+p{
+    text-align: center;
+}
